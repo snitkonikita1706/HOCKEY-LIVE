@@ -117,6 +117,12 @@ def parse_game(g):
         broadcast["hd"] = g["hd"]
     if isinstance(g.get("commentator"), bool):
         broadcast["commentator"] = g["commentator"]
+    if isinstance(g.get("has_video"), bool):
+        broadcast["hasVideo"] = g["has_video"]
+    if isinstance(g.get("free"), bool):
+        broadcast["freeFlag"] = g["free"]
+    if isinstance(g.get("yandex_rights"), bool):
+        broadcast["yandexRights"] = g["yandex_rights"]
     if g.get("type_id") is not None:
         broadcast["eventType"] = number(g["type_id"])
     return {
