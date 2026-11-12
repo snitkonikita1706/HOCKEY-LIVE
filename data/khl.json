@@ -1,49 +1,7 @@
 {
-  "updatedAt": "2026-11-12T16:15:46.473778+00:00",
+  "updatedAt": "2026-11-12T19:10:38.979125+00:00",
   "source": "KHL Webcaster mobile scoreboard",
   "games": [
-    {
-      "league": "KHL",
-      "id": "902225",
-      "webcasterId": "3001051",
-      "khlId": "902225",
-      "broadcastMeta": {
-        "hd": true,
-        "commentator": true,
-        "hasVideo": false,
-        "freeFlag": false,
-        "yandexRights": true,
-        "eventType": 18
-      },
-      "home": "ХК Сочи",
-      "away": "Северсталь",
-      "homeScore": 1,
-      "awayScore": 4,
-      "time": "2026-11-05T16:30:00Z",
-      "status": "done",
-      "watch": "https://www.khl.ru/calendar/"
-    },
-    {
-      "league": "KHL",
-      "id": "902226",
-      "webcasterId": "3001055",
-      "khlId": "902226",
-      "broadcastMeta": {
-        "hd": true,
-        "commentator": true,
-        "hasVideo": false,
-        "freeFlag": false,
-        "yandexRights": true,
-        "eventType": 18
-      },
-      "home": "Драконы",
-      "away": "Динамо М",
-      "homeScore": 2,
-      "awayScore": 3,
-      "time": "2026-11-05T16:30:00Z",
-      "status": "done",
-      "watch": "https://www.khl.ru/calendar/"
-    },
     {
       "league": "KHL",
       "id": "902230",
@@ -517,14 +475,14 @@
         "hasVideo": false,
         "freeFlag": false,
         "yandexRights": true,
-        "eventType": 24
+        "eventType": 18
       },
       "home": "Металлург Мг",
       "away": "Авангард",
       "homeScore": 3,
-      "awayScore": 3,
+      "awayScore": 4,
       "time": "2026-11-12T14:00:00Z",
-      "status": "live",
+      "status": "done",
       "watch": "https://www.khl.ru/calendar/"
     },
     {
@@ -538,14 +496,14 @@
         "hasVideo": false,
         "freeFlag": false,
         "yandexRights": true,
-        "eventType": 24
+        "eventType": 18
       },
       "home": "Автомобилист",
       "away": "Драконы",
-      "homeScore": 3,
+      "homeScore": 4,
       "awayScore": 2,
       "time": "2026-11-12T14:00:00Z",
-      "status": "live",
+      "status": "done",
       "watch": "https://www.khl.ru/calendar/"
     },
     {
@@ -559,7 +517,7 @@
         "hasVideo": false,
         "freeFlag": false,
         "yandexRights": true,
-        "eventType": 24
+        "eventType": 18
       },
       "home": "Салават Юлаев",
       "away": "Ак Барс",
@@ -580,14 +538,14 @@
         "hasVideo": false,
         "freeFlag": false,
         "yandexRights": true,
-        "eventType": 24
+        "eventType": 18
       },
       "home": "Барыс",
       "away": "Адмирал",
-      "homeScore": 1,
+      "homeScore": 4,
       "awayScore": 2,
       "time": "2026-11-12T14:30:00Z",
-      "status": "live",
+      "status": "done",
       "watch": "https://www.khl.ru/calendar/"
     },
     {
@@ -601,14 +559,14 @@
         "hasVideo": false,
         "freeFlag": false,
         "yandexRights": true,
-        "eventType": 24
+        "eventType": 18
       },
       "home": "Спартак",
       "away": "Амур",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 4,
       "time": "2026-11-12T16:30:00Z",
-      "status": "scheduled",
+      "status": "done",
       "watch": "https://www.khl.ru/calendar/"
     },
     {
