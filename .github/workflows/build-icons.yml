@@ -1,0 +1,39 @@
+name: Обновить иконки HOCKEY LIVE
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'assets/hockey-icon-source.webp'
+      - '.github/workflows/build-icons.yml'
+permissions:
+  contents: write
+jobs:
+  icons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Подготовить изображения
+        run: |
+          python -m pip install --quiet pillow
+          python - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          source=Image.open('assets/hockey-icon-source.webp').convert('RGB')
+          assert source.size[0] == source.size[1] and source.size[0] >= 180
+          for size in [180, 192, 512]:
+              target=source.resize((size,size), Image.Resampling.LANCZOS)
+              target.save(f'icon-{size}.png',format='PNG',optimize=True)
+              print(f'Created icon-{size}.png: {Path(f"icon-{size}.png").stat().st_size} bytes')
+          PY
+      - name: Сохранить обновлённые иконки
+        run: |
+          git config user.name "hockey-live-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add icon-180.png icon-192.png icon-512.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Replace iPhone and PWA icons with HOCKEY LIVE artwork"
+            git push
+          fi
