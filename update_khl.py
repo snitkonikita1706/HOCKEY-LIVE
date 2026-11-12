@@ -57,6 +57,23 @@ def name(event, prefix):
         return team.get("name") or team.get("title") or team.get("location")
     return event.get(prefix + "_name") or event.get(prefix + "_title")
 
+def team_logo(g, prefix):
+    team = g.get(prefix)
+    image = team.get("image") if isinstance(team, dict) else None
+    if isinstance(image, dict):
+        image = image.get("url") or image.get("original") or image.get("src")
+    if not isinstance(image, str):
+        return None
+    image = image.strip()
+    if image.startswith("//"):
+        image = "https:" + image
+    elif image.startswith("/"):
+        image = "https://khl.api.webcaster.pro" + image
+    # Never display unknown schemes or untrusted active content.
+    if not image.startswith("https://"):
+        return None
+    return image
+
 def number(v):
     if v is None or v == "":
         return None
@@ -131,6 +148,8 @@ def parse_game(g):
         "khlId": str(khl_id) if khl_id is not None else None,
         "broadcastMeta": broadcast,
         "home": str(home), "away": str(away),
+        "homeLogo": team_logo(g, "team_a"),
+        "awayLogo": team_logo(g, "team_b"),
         "homeScore": number(score_a) if finished or live else None,
         "awayScore": number(score_b) if finished or live else None,
         "time": started.astimezone(dt.timezone.utc).isoformat().replace("+00:00", "Z"),
