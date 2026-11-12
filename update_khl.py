@@ -131,6 +131,11 @@ def main():
         if page == 1 and rows:
             sample = rows[0].get("event", rows[0]) if isinstance(rows[0], dict) else {}
             print("Sample event fields: " + ",".join(sample.keys())[:800] if isinstance(sample, dict) else "Sample not an object")
+        if page == 1:
+            for sample_row in rows[:3]:
+                e = sample_row.get("event", sample_row) if isinstance(sample_row, dict) else {}
+                if isinstance(e, dict):
+                    print("Score diagnostics: " + repr({k:e.get(k) for k in ("score","scores","sscore","game_state_key")})[:500], flush=True)
         for event in rows:
             game = parse_game(event)
             if game:
