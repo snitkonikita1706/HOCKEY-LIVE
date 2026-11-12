@@ -1,32 +1,20 @@
 {
-  "updatedAt": "2026-11-12T13:27:33.743410+00:00",
+  "updatedAt": "2026-11-12T16:06:12.291277+00:00",
   "source": "KHL Webcaster mobile scoreboard",
   "games": [
     {
       "league": "KHL",
-      "id": "902224",
-      "home": "Авангард",
-      "away": "ЦСКА",
-      "homeScore": 2,
-      "awayScore": 1,
-      "time": "2026-11-05T13:30:00Z",
-      "status": "done",
-      "watch": "https://www.khl.ru/calendar/"
-    },
-    {
-      "league": "KHL",
-      "id": "902227",
-      "home": "Металлург Мг",
-      "away": "Нефтехимик",
-      "homeScore": 8,
-      "awayScore": 1,
-      "time": "2026-11-05T14:00:00Z",
-      "status": "done",
-      "watch": "https://www.khl.ru/calendar/"
-    },
-    {
-      "league": "KHL",
       "id": "902225",
+      "webcasterId": "3001051",
+      "khlId": "902225",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "ХК Сочи",
       "away": "Северсталь",
       "homeScore": 1,
@@ -38,6 +26,16 @@
     {
       "league": "KHL",
       "id": "902226",
+      "webcasterId": "3001055",
+      "khlId": "902226",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Драконы",
       "away": "Динамо М",
       "homeScore": 2,
@@ -49,6 +47,16 @@
     {
       "league": "KHL",
       "id": "902230",
+      "webcasterId": "3001071",
+      "khlId": "902230",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Амур",
       "away": "СКА",
       "homeScore": 2,
@@ -60,6 +68,16 @@
     {
       "league": "KHL",
       "id": "902229",
+      "webcasterId": "3001067",
+      "khlId": "902229",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Адмирал",
       "away": "Барыс",
       "homeScore": 5,
@@ -71,6 +89,16 @@
     {
       "league": "KHL",
       "id": "902228",
+      "webcasterId": "3001063",
+      "khlId": "902228",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Трактор",
       "away": "Ак Барс",
       "homeScore": 5,
@@ -82,6 +110,16 @@
     {
       "league": "KHL",
       "id": "902231",
+      "webcasterId": "3001075",
+      "khlId": "902231",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Салават Юлаев",
       "away": "Автомобилист",
       "homeScore": 3,
@@ -93,6 +131,16 @@
     {
       "league": "KHL",
       "id": "902232",
+      "webcasterId": "3001079",
+      "khlId": "902232",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Лада",
       "away": "Локомотив",
       "homeScore": 1,
@@ -104,6 +152,16 @@
     {
       "league": "KHL",
       "id": "902233",
+      "webcasterId": "3001083",
+      "khlId": "902233",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Спартак",
       "away": "Динамо Мн",
       "homeScore": 5,
@@ -115,6 +173,16 @@
     {
       "league": "KHL",
       "id": "902234",
+      "webcasterId": "3001087",
+      "khlId": "902234",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Авангард",
       "away": "Сибирь",
       "homeScore": 4,
@@ -126,6 +194,16 @@
     {
       "league": "KHL",
       "id": "902147",
+      "webcasterId": "3000739",
+      "khlId": "902147",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Торпедо",
       "away": "Динамо М",
       "homeScore": 4,
@@ -137,6 +215,16 @@
     {
       "league": "KHL",
       "id": "902238",
+      "webcasterId": "3001103",
+      "khlId": "902238",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Амур",
       "away": "Барыс",
       "homeScore": 2,
@@ -148,6 +236,16 @@
     {
       "league": "KHL",
       "id": "902236",
+      "webcasterId": "3001095",
+      "khlId": "902236",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Нефтехимик",
       "away": "Локомотив",
       "homeScore": 1,
@@ -159,6 +257,16 @@
     {
       "league": "KHL",
       "id": "902237",
+      "webcasterId": "3001099",
+      "khlId": "902237",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Трактор",
       "away": "Автомобилист",
       "homeScore": 2,
@@ -170,6 +278,16 @@
     {
       "league": "KHL",
       "id": "902235",
+      "webcasterId": "3001091",
+      "khlId": "902235",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "ХК Сочи",
       "away": "Динамо Мн",
       "homeScore": 3,
@@ -181,6 +299,16 @@
     {
       "league": "KHL",
       "id": "902239",
+      "webcasterId": "3001107",
+      "khlId": "902239",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Ак Барс",
       "away": "Торпедо",
       "homeScore": 5,
@@ -192,6 +320,16 @@
     {
       "league": "KHL",
       "id": "902242",
+      "webcasterId": "3001119",
+      "khlId": "902242",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Северсталь",
       "away": "Лада",
       "homeScore": 4,
@@ -203,6 +341,16 @@
     {
       "league": "KHL",
       "id": "902240",
+      "webcasterId": "3001111",
+      "khlId": "902240",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "ЦСКА",
       "away": "Сибирь",
       "homeScore": 4,
@@ -214,6 +362,16 @@
     {
       "league": "KHL",
       "id": "902241",
+      "webcasterId": "3001115",
+      "khlId": "902241",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "СКА",
       "away": "Спартак",
       "homeScore": 7,
@@ -225,6 +383,16 @@
     {
       "league": "KHL",
       "id": "902243",
+      "webcasterId": "3001123",
+      "khlId": "902243",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Трактор",
       "away": "Драконы",
       "homeScore": 5,
@@ -236,6 +404,16 @@
     {
       "league": "KHL",
       "id": "902244",
+      "webcasterId": "3001127",
+      "khlId": "902244",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Динамо Мн",
       "away": "Авангард",
       "homeScore": 4,
@@ -247,6 +425,16 @@
     {
       "league": "KHL",
       "id": "902245",
+      "webcasterId": "3001131",
+      "khlId": "902245",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "Нефтехимик",
       "away": "Салават Юлаев",
       "homeScore": 4,
@@ -258,6 +446,16 @@
     {
       "league": "KHL",
       "id": "902246",
+      "webcasterId": "3001135",
+      "khlId": "902246",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "ХК Сочи",
       "away": "Лада",
       "homeScore": 3,
@@ -269,6 +467,16 @@
     {
       "league": "KHL",
       "id": "902247",
+      "webcasterId": "3001139",
+      "khlId": "902247",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "ЦСКА",
       "away": "Торпедо",
       "homeScore": 5,
@@ -280,6 +488,16 @@
     {
       "league": "KHL",
       "id": "902248",
+      "webcasterId": "3001143",
+      "khlId": "902248",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 18
+      },
       "home": "СКА",
       "away": "Динамо М",
       "homeScore": 1,
@@ -291,50 +509,100 @@
     {
       "league": "KHL",
       "id": "902250",
+      "webcasterId": "3001155",
+      "khlId": "902250",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Металлург Мг",
       "away": "Авангард",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 3,
+      "awayScore": 2,
       "time": "2026-11-12T14:00:00Z",
-      "status": "scheduled",
+      "status": "live",
       "watch": "https://www.khl.ru/calendar/"
     },
     {
       "league": "KHL",
       "id": "902251",
+      "webcasterId": "3001159",
+      "khlId": "902251",
+      "broadcastMeta": {
+        "hd": false,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Автомобилист",
       "away": "Драконы",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "time": "2026-11-12T14:00:00Z",
-      "status": "scheduled",
+      "status": "live",
       "watch": "https://www.khl.ru/calendar/"
     },
     {
       "league": "KHL",
       "id": "902252",
+      "webcasterId": "3001163",
+      "khlId": "902252",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Салават Юлаев",
       "away": "Ак Барс",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 4,
       "time": "2026-11-12T14:00:00Z",
-      "status": "scheduled",
+      "status": "live",
       "watch": "https://www.khl.ru/calendar/"
     },
     {
       "league": "KHL",
       "id": "902249",
+      "webcasterId": "3001147",
+      "khlId": "902249",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Барыс",
       "away": "Адмирал",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 2,
       "time": "2026-11-12T14:30:00Z",
-      "status": "scheduled",
+      "status": "live",
       "watch": "https://www.khl.ru/calendar/"
     },
     {
       "league": "KHL",
       "id": "902253",
+      "webcasterId": "3001167",
+      "khlId": "902253",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Спартак",
       "away": "Амур",
       "homeScore": null,
@@ -346,6 +614,16 @@
     {
       "league": "KHL",
       "id": "902255",
+      "webcasterId": "3001175",
+      "khlId": "902255",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Северсталь",
       "away": "Трактор",
       "homeScore": null,
@@ -357,6 +635,16 @@
     {
       "league": "KHL",
       "id": "902256",
+      "webcasterId": "3001179",
+      "khlId": "902256",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Торпедо",
       "away": "Лада",
       "homeScore": null,
@@ -368,6 +656,16 @@
     {
       "league": "KHL",
       "id": "902254",
+      "webcasterId": "3001171",
+      "khlId": "902254",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "СКА",
       "away": "Динамо Мн",
       "homeScore": null,
@@ -379,6 +677,16 @@
     {
       "league": "KHL",
       "id": "902260",
+      "webcasterId": "3001195",
+      "khlId": "902260",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Нефтехимик",
       "away": "Авангард",
       "homeScore": null,
@@ -390,6 +698,16 @@
     {
       "league": "KHL",
       "id": "902259",
+      "webcasterId": "3001191",
+      "khlId": "902259",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Автомобилист",
       "away": "Ак Барс",
       "homeScore": null,
@@ -401,6 +719,16 @@
     {
       "league": "KHL",
       "id": "902258",
+      "webcasterId": "3001187",
+      "khlId": "902258",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Спартак",
       "away": "Адмирал",
       "homeScore": null,
@@ -412,6 +740,16 @@
     {
       "league": "KHL",
       "id": "902257",
+      "webcasterId": "3001183",
+      "khlId": "902257",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "ХК Сочи",
       "away": "Амур",
       "homeScore": null,
@@ -423,6 +761,16 @@
     {
       "league": "KHL",
       "id": "902261",
+      "webcasterId": "3001199",
+      "khlId": "902261",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Локомотив",
       "away": "Драконы",
       "homeScore": null,
@@ -434,6 +782,16 @@
     {
       "league": "KHL",
       "id": "902264",
+      "webcasterId": "3001211",
+      "khlId": "902264",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Сибирь",
       "away": "Динамо М",
       "homeScore": null,
@@ -445,6 +803,16 @@
     {
       "league": "KHL",
       "id": "902262",
+      "webcasterId": "3001203",
+      "khlId": "902262",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Барыс",
       "away": "Металлург Мг",
       "homeScore": null,
@@ -456,6 +824,16 @@
     {
       "league": "KHL",
       "id": "902263",
+      "webcasterId": "3001207",
+      "khlId": "902263",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Торпедо",
       "away": "Динамо Мн",
       "homeScore": null,
@@ -467,6 +845,16 @@
     {
       "league": "KHL",
       "id": "902265",
+      "webcasterId": "3001215",
+      "khlId": "902265",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": true,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "СКА",
       "away": "Трактор",
       "homeScore": null,
@@ -478,6 +866,16 @@
     {
       "league": "KHL",
       "id": "902266",
+      "webcasterId": "3001219",
+      "khlId": "902266",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Салават Юлаев",
       "away": "Адмирал",
       "homeScore": null,
@@ -489,6 +887,16 @@
     {
       "league": "KHL",
       "id": "902267",
+      "webcasterId": "3001223",
+      "khlId": "902267",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "ЦСКА",
       "away": "Амур",
       "homeScore": null,
@@ -500,6 +908,16 @@
     {
       "league": "KHL",
       "id": "902268",
+      "webcasterId": "3001227",
+      "khlId": "902268",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Локомотив",
       "away": "ХК Сочи",
       "homeScore": null,
@@ -511,6 +929,16 @@
     {
       "league": "KHL",
       "id": "902269",
+      "webcasterId": "3001231",
+      "khlId": "902269",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Сибирь",
       "away": "Трактор",
       "homeScore": null,
@@ -522,6 +950,16 @@
     {
       "league": "KHL",
       "id": "902271",
+      "webcasterId": "3001239",
+      "khlId": "902271",
+      "broadcastMeta": {
+        "hd": false,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Автомобилист",
       "away": "Спартак",
       "homeScore": null,
@@ -533,6 +971,16 @@
     {
       "league": "KHL",
       "id": "902273",
+      "webcasterId": "3001247",
+      "khlId": "902273",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Лада",
       "away": "Металлург Мг",
       "homeScore": null,
@@ -544,6 +992,16 @@
     {
       "league": "KHL",
       "id": "902272",
+      "webcasterId": "3001243",
+      "khlId": "902272",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Нефтехимик",
       "away": "Динамо Мн",
       "homeScore": null,
@@ -555,6 +1013,16 @@
     {
       "league": "KHL",
       "id": "902270",
+      "webcasterId": "3001235",
+      "khlId": "902270",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Ак Барс",
       "away": "Динамо М",
       "homeScore": null,
@@ -566,6 +1034,16 @@
     {
       "league": "KHL",
       "id": "902275",
+      "webcasterId": "3001255",
+      "khlId": "902275",
+      "broadcastMeta": {
+        "hd": false,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Авангард",
       "away": "Адмирал",
       "homeScore": null,
@@ -577,6 +1055,16 @@
     {
       "league": "KHL",
       "id": "902278",
+      "webcasterId": "3001271",
+      "khlId": "902278",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Салават Юлаев",
       "away": "Барыс",
       "homeScore": null,
@@ -588,6 +1076,16 @@
     {
       "league": "KHL",
       "id": "902274",
+      "webcasterId": "3001251",
+      "khlId": "902274",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Северсталь",
       "away": "ХК Сочи",
       "homeScore": null,
@@ -599,6 +1097,16 @@
     {
       "league": "KHL",
       "id": "902276",
+      "webcasterId": "3001259",
+      "khlId": "902276",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Драконы",
       "away": "Амур",
       "homeScore": null,
@@ -610,6 +1118,16 @@
     {
       "league": "KHL",
       "id": "902277",
+      "webcasterId": "3001263",
+      "khlId": "902277",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "ЦСКА",
       "away": "Локомотив",
       "homeScore": null,
@@ -621,6 +1139,16 @@
     {
       "league": "KHL",
       "id": "902279",
+      "webcasterId": "3001275",
+      "khlId": "902279",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Металлург Мг",
       "away": "Трактор",
       "homeScore": null,
@@ -632,6 +1160,16 @@
     {
       "league": "KHL",
       "id": "902280",
+      "webcasterId": "3001279",
+      "khlId": "902280",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Ак Барс",
       "away": "Спартак",
       "homeScore": null,
@@ -643,6 +1181,16 @@
     {
       "league": "KHL",
       "id": "902281",
+      "webcasterId": "3001283",
+      "khlId": "902281",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Нефтехимик",
       "away": "СКА",
       "homeScore": null,
@@ -654,6 +1202,16 @@
     {
       "league": "KHL",
       "id": "902282",
+      "webcasterId": "3001287",
+      "khlId": "902282",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Сибирь",
       "away": "Автомобилист",
       "homeScore": null,
@@ -665,6 +1223,16 @@
     {
       "league": "KHL",
       "id": "902286",
+      "webcasterId": "3001303",
+      "khlId": "902286",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Авангард",
       "away": "Барыс",
       "homeScore": null,
@@ -676,6 +1244,16 @@
     {
       "league": "KHL",
       "id": "902283",
+      "webcasterId": "3001291",
+      "khlId": "902283",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Торпедо",
       "away": "Локомотив",
       "homeScore": null,
@@ -687,6 +1265,16 @@
     {
       "league": "KHL",
       "id": "902285",
+      "webcasterId": "3001299",
+      "khlId": "902285",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Северсталь",
       "away": "Амур",
       "homeScore": null,
@@ -698,6 +1286,16 @@
     {
       "league": "KHL",
       "id": "902284",
+      "webcasterId": "3001295",
+      "khlId": "902284",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Драконы",
       "away": "ЦСКА",
       "homeScore": null,
@@ -709,6 +1307,16 @@
     {
       "league": "KHL",
       "id": "902287",
+      "webcasterId": "3001307",
+      "khlId": "902287",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Нефтехимик",
       "away": "Спартак",
       "homeScore": null,
@@ -720,6 +1328,16 @@
     {
       "league": "KHL",
       "id": "902288",
+      "webcasterId": "3001311",
+      "khlId": "902288",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "ХК Сочи",
       "away": "СКА",
       "homeScore": null,
@@ -731,6 +1349,16 @@
     {
       "league": "KHL",
       "id": "902291",
+      "webcasterId": "3001323",
+      "khlId": "902291",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Авангард",
       "away": "Ак Барс",
       "homeScore": null,
@@ -742,6 +1370,16 @@
     {
       "league": "KHL",
       "id": "902293",
+      "webcasterId": "3001331",
+      "khlId": "902293",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Барыс",
       "away": "Динамо Мн",
       "homeScore": null,
@@ -753,6 +1391,16 @@
     {
       "league": "KHL",
       "id": "902289",
+      "webcasterId": "3001315",
+      "khlId": "902289",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Торпедо",
       "away": "Автомобилист",
       "homeScore": null,
@@ -764,6 +1412,16 @@
     {
       "league": "KHL",
       "id": "902292",
+      "webcasterId": "3001327",
+      "khlId": "902292",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Драконы",
       "away": "Лада",
       "homeScore": null,
@@ -775,6 +1433,16 @@
     {
       "league": "KHL",
       "id": "902290",
+      "webcasterId": "3001319",
+      "khlId": "902290",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Динамо М",
       "away": "ЦСКА",
       "homeScore": null,
@@ -786,6 +1454,16 @@
     {
       "league": "KHL",
       "id": "902294",
+      "webcasterId": "3001335",
+      "khlId": "902294",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Сибирь",
       "away": "Северсталь",
       "homeScore": null,
@@ -797,6 +1475,16 @@
     {
       "league": "KHL",
       "id": "902298",
+      "webcasterId": "3001351",
+      "khlId": "902298",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Адмирал",
       "away": "Ак Барс",
       "homeScore": null,
@@ -808,6 +1496,16 @@
     {
       "league": "KHL",
       "id": "902295",
+      "webcasterId": "3001339",
+      "khlId": "902295",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Трактор",
       "away": "Лада",
       "homeScore": null,
@@ -819,6 +1517,16 @@
     {
       "league": "KHL",
       "id": "902296",
+      "webcasterId": "3001343",
+      "khlId": "902296",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Салават Юлаев",
       "away": "Нефтехимик",
       "homeScore": null,
@@ -830,6 +1538,16 @@
     {
       "league": "KHL",
       "id": "902297",
+      "webcasterId": "3001347",
+      "khlId": "902297",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Металлург Мг",
       "away": "Динамо Мн",
       "homeScore": null,
@@ -841,6 +1559,16 @@
     {
       "league": "KHL",
       "id": "902299",
+      "webcasterId": "3001355",
+      "khlId": "902299",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Динамо М",
       "away": "Автомобилист",
       "homeScore": null,
@@ -852,6 +1580,16 @@
     {
       "league": "KHL",
       "id": "902302",
+      "webcasterId": "3001367",
+      "khlId": "902302",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Барыс",
       "away": "Северсталь",
       "homeScore": null,
@@ -863,6 +1601,16 @@
     {
       "league": "KHL",
       "id": "902301",
+      "webcasterId": "3001363",
+      "khlId": "902301",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Торпедо",
       "away": "Сибирь",
       "homeScore": null,
@@ -874,6 +1622,16 @@
     {
       "league": "KHL",
       "id": "902300",
+      "webcasterId": "3001359",
+      "khlId": "902300",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "СКА",
       "away": "Локомотив",
       "homeScore": null,
@@ -885,6 +1643,16 @@
     {
       "league": "KHL",
       "id": "902306",
+      "webcasterId": "3001383",
+      "khlId": "902306",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Амур",
       "away": "Ак Барс",
       "homeScore": null,
@@ -896,6 +1664,16 @@
     {
       "league": "KHL",
       "id": "902303",
+      "webcasterId": "3001371",
+      "khlId": "902303",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Адмирал",
       "away": "Авангард",
       "homeScore": null,
@@ -907,6 +1685,16 @@
     {
       "league": "KHL",
       "id": "902304",
+      "webcasterId": "3001375",
+      "khlId": "902304",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Трактор",
       "away": "Автомобилист",
       "homeScore": null,
@@ -918,6 +1706,16 @@
     {
       "league": "KHL",
       "id": "902308",
+      "webcasterId": "3001391",
+      "khlId": "902308",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Салават Юлаев",
       "away": "Динамо Мн",
       "homeScore": null,
@@ -929,6 +1727,16 @@
     {
       "league": "KHL",
       "id": "902305",
+      "webcasterId": "3001379",
+      "khlId": "902305",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "ХК Сочи",
       "away": "Нефтехимик",
       "homeScore": null,
@@ -940,6 +1748,16 @@
     {
       "league": "KHL",
       "id": "902307",
+      "webcasterId": "3001387",
+      "khlId": "902307",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Спартак",
       "away": "ЦСКА",
       "homeScore": null,
@@ -951,6 +1769,16 @@
     {
       "league": "KHL",
       "id": "902309",
+      "webcasterId": "3001395",
+      "khlId": "902309",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Лада",
       "away": "Локомотив",
       "homeScore": null,
@@ -962,6 +1790,16 @@
     {
       "league": "KHL",
       "id": "902311",
+      "webcasterId": "3001403",
+      "khlId": "902311",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Северсталь",
       "away": "Сибирь",
       "homeScore": null,
@@ -973,6 +1811,16 @@
     {
       "league": "KHL",
       "id": "902310",
+      "webcasterId": "3001399",
+      "khlId": "902310",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "СКА",
       "away": "Барыс",
       "homeScore": null,
@@ -984,6 +1832,16 @@
     {
       "league": "KHL",
       "id": "902315",
+      "webcasterId": "3001419",
+      "khlId": "902315",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Амур",
       "away": "Авангард",
       "homeScore": null,
@@ -995,11 +1853,63 @@
     {
       "league": "KHL",
       "id": "902314",
+      "webcasterId": "3001415",
+      "khlId": "902314",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
       "home": "Трактор",
       "away": "Металлург Мг",
       "homeScore": null,
       "awayScore": null,
       "time": "2026-11-28T11:00:00Z",
+      "status": "scheduled",
+      "watch": "https://www.khl.ru/calendar/"
+    },
+    {
+      "league": "KHL",
+      "id": "902312",
+      "webcasterId": "3001407",
+      "khlId": "902312",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
+      "home": "Спартак",
+      "away": "Торпедо",
+      "homeScore": null,
+      "awayScore": null,
+      "time": "2026-11-28T14:00:00Z",
+      "status": "scheduled",
+      "watch": "https://www.khl.ru/calendar/"
+    },
+    {
+      "league": "KHL",
+      "id": "902313",
+      "webcasterId": "3001411",
+      "khlId": "902313",
+      "broadcastMeta": {
+        "hd": true,
+        "commentator": false,
+        "hasVideo": false,
+        "freeFlag": false,
+        "yandexRights": true,
+        "eventType": 24
+      },
+      "home": "ХК Сочи",
+      "away": "Драконы",
+      "homeScore": null,
+      "awayScore": null,
+      "time": "2026-11-28T14:00:00Z",
       "status": "scheduled",
       "watch": "https://www.khl.ru/calendar/"
     }
