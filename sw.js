@@ -1,6 +1,6 @@
 /* HOCKEY LIVE v2.2.2: navigation and scoreboards are network-first.
    Offline shell is only a fallback; never replace fresh results with stale scores. */
-const CACHE='hockey-live-v16';
+const CACHE='hockey-live-v17';
 const SHELL=['./','./index.html','./manifest.webmanifest?v=icon-3','./icon-180.png?v=icon-3','./icon-192.png?v=icon-3','./icon-512.png?v=icon-3','./assets/hockey-goal-bg.jpg?v=2.3.1'];
 self.addEventListener('install',event=>{
  event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()));
