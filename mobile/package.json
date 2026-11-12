@@ -12,14 +12,14 @@
   "dependencies": {
     "expo": "~58.0.21",
     "expo-router": "~58.0.31",
-    "expo-status-bar": "~58.0.8",
-    "expo-linking": "~58.0.8",
-    "expo-constants": "~58.0.8",
-    "expo-splash-screen": "~58.0.8",
+    "expo-status-bar": "*",
+    "expo-linking": "*",
+    "expo-constants": "*",
+    "expo-splash-screen": "*",
     "react": "19.3.0",
     "react-native": "0.88.1",
-    "react-native-safe-area-context": "~5.6.0",
-    "react-native-screens": "~4.16.0"
+    "react-native-safe-area-context": "*",
+    "react-native-screens": "*"
   },
   "devDependencies": {
     "@types/react": "~19.2.0",
