@@ -70,6 +70,8 @@ def first(*values):
 def parse_game(g):
     if not isinstance(g, dict):
         return None
+    if isinstance(g.get("event"), dict):
+        g = g["event"]
     home = name(g, "team_a")
     away = name(g, "team_b")
     if not home or not away:
@@ -120,7 +122,8 @@ def main():
             return 1 if not games else 0
         print(f"Page {page}: {len(rows)} records", flush=True)
         if page == 1 and rows:
-            print("Sample event fields: " + ",".join(rows[0].keys())[:450] if isinstance(rows[0], dict) else "Sample not an object")
+            sample = rows[0].get("event", rows[0]) if isinstance(rows[0], dict) else {}
+            print("Sample event fields: " + ",".join(sample.keys())[:800] if isinstance(sample, dict) else "Sample not an object")
         for event in rows:
             game = parse_game(event)
             if game:
