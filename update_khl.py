@@ -102,7 +102,7 @@ def parse_game(g):
     # Webcaster provides the authoritative final score as "a:b".
     combined = g.get("score")
     if isinstance(combined, str):
-        m = re.fullmatch(r"\\s*(\\d+)\\s*[:\u2013-]\\s*(\\d+)\\s*", combined)
+        m = re.fullmatch(r"\s*(\d+)\s*[:–-]\s*(\d+)\s*", combined)
         if m:
             score_a, score_b = int(m.group(1)), int(m.group(2))
     gid = first(g.get("khl_id"), g.get("match_id"), g.get("id"))
