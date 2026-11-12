@@ -1,0 +1,25 @@
+name: HOCKEY LIVE 4.0 iOS checks
+on:
+  push:
+    branches: [feature/hockey-live-4-ios]
+    paths:
+      - 'mobile/**'
+      - '.github/workflows/mobile-ios-check.yml'
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mobile
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: TypeScript check
+        run: npx tsc --noEmit
+      - name: Bundle iOS JavaScript
+        run: npx expo export --platform ios --output-dir dist
