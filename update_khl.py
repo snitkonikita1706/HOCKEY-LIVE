@@ -108,8 +108,22 @@ def parse_game(g):
     gid = first(g.get("khl_id"), g.get("match_id"), g.get("id"))
     if gid is None:
         return None
+    # Public match metadata from the same Webcaster API family as the official KHL app.
+    # No media URLs, account tokens or DRM material are collected.
+    webcaster_id = g.get("id")
+    khl_id = g.get("khl_id")
+    broadcast = {}
+    if isinstance(g.get("hd"), bool):
+        broadcast["hd"] = g["hd"]
+    if isinstance(g.get("commentator"), bool):
+        broadcast["commentator"] = g["commentator"]
+    if g.get("type_id") is not None:
+        broadcast["eventType"] = number(g["type_id"])
     return {
         "league": "KHL", "id": str(gid),
+        "webcasterId": str(webcaster_id) if webcaster_id is not None else None,
+        "khlId": str(khl_id) if khl_id is not None else None,
+        "broadcastMeta": broadcast,
         "home": str(home), "away": str(away),
         "homeScore": number(score_a) if finished or live else None,
         "awayScore": number(score_b) if finished or live else None,
