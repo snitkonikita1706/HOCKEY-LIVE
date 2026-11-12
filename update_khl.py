@@ -4,6 +4,7 @@ Stores only fixture metadata. No video feeds or access credentials are collected
 import datetime as dt
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -98,6 +99,12 @@ def parse_game(g):
     live = state in ("live", "inprogress", "in_progress", "started", "playing")
     score_a = first(g.get("team_a_gf"), g.get("team_a_score"), g.get("home_score"))
     score_b = first(g.get("team_b_gf"), g.get("team_b_score"), g.get("away_score"))
+    # Webcaster provides the authoritative final score as "a:b".
+    combined = g.get("score")
+    if isinstance(combined, str):
+        m = re.fullmatch(r"\\s*(\\d+)\\s*[:\u2013-]\\s*(\\d+)\\s*", combined)
+        if m:
+            score_a, score_b = int(m.group(1)), int(m.group(2))
     gid = first(g.get("khl_id"), g.get("match_id"), g.get("id"))
     if gid is None:
         return None
