@@ -1,0 +1,28 @@
+{
+  "name": "hockey-live-mobile",
+  "version": "4.0.0-alpha.1",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "ios": "expo start --ios",
+    "check": "tsc --noEmit",
+    "doctor": "expo-doctor"
+  },
+  "dependencies": {
+    "expo": "~58.0.21",
+    "expo-router": "~58.0.31",
+    "expo-status-bar": "~58.0.8",
+    "expo-linking": "~58.0.8",
+    "expo-constants": "~58.0.8",
+    "expo-splash-screen": "~58.0.8",
+    "react": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.0",
+    "typescript": "~5.9.2"
+  }
+}

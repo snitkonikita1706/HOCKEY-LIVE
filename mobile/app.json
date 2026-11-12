@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "HOCKEY LIVE",
+    "slug": "hockey-live-pro",
+    "scheme": "hockeylive",
+    "version": "4.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "kz.snitko.hockeylive"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": null
+      }
+    }
+  }
+}
