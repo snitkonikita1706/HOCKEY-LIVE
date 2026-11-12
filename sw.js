@@ -1,1 +1,25 @@
-const CACHE='hockey-live-v3';const ASSETS=['./','./index.html','./manifest.webmanifest','./icon-180.png','./icon-192.png','./icon-512.png','./data/klhl.json'];self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));self.skipWaiting()});self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim()});self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(u.origin!==self.location.origin||e.request.method!=='GET')return;if(u.pathname.endsWith('/data/klhl.json')||u.pathname.endsWith('/data/khl.json')){e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));return;}e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)))});
+/* HOCKEY LIVE v2.2.2: navigation and scoreboards are network-first.
+   Offline shell is only a fallback; never replace fresh results with stale scores. */
+const CACHE='hockey-live-v4';
+const SHELL=['./','./index.html','./manifest.webmanifest','./icon-180.png','./icon-192.png','./icon-512.png'];
+self.addEventListener('install',event=>{
+ event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()));
+});
+self.addEventListener('activate',event=>{
+ event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));
+});
+self.addEventListener('fetch',event=>{
+ const req=event.request;
+ if(req.method!=='GET')return;
+ const url=new URL(req.url);
+ if(url.origin!==self.location.origin)return;
+ const navigation=req.mode==='navigate'||url.pathname.endsWith('/index.html');
+ const data=/\/data\/(?:klhl|khl)\.json$/.test(url.pathname);
+ if(navigation||data){
+   event.respondWith(fetch(req,{cache:'no-store'}).then(response=>{
+     if(!response.ok)throw new Error('HTTP '+response.status);
+     if(navigation) caches.open(CACHE).then(c=>c.put('./index.html',response.clone())).catch(()=>{});
+     return response;
+   }).catch(async()=>navigation?(await caches.match('./index.html'))||Response.error():Response.error()));
+ }
+});
