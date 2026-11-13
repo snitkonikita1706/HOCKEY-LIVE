@@ -63,3 +63,11 @@ npx expo start
 - **Не добавляйте фиктивный EAS project ID**. После явного подключения аккаунта Expo запустите из `mobile/` команды `npx eas-cli@latest login`, `npx eas-cli@latest init`, а затем `npx eas-cli@latest build -p ios --profile preview` для тестовой сборки.
 - Для установки на реальные устройства / TestFlight потребуется Apple Developer, корректная подпись iOS, регистрация приложения и корректные сведения о правах на видео/эмблемы.
 - Важно: `expo export --platform ios` проверяет JS-экспорт, **не является** нативной iOS-сборкой и не подтверждает прохождение App Review.
+
+## Alpha.5 — нативная конфигурация и выпуск TestFlight
+
+- В CI добавлена проверка `expo prebuild --platform ios --no-install --non-interactive`: создание Xcode-проекта из Expo конфигурации. Это **не** компиляция Xcode и **не** подписанная IPA.
+- Для загрузки в **TestFlight** используйте профиль `production` с `distribution: store`, а не `preview`, который предназначен для внутреннего распространения.
+- Генератор `.github/workflows/mobile-ios-assets.yml` создаёт iOS иконку 1024×1024 PNG без прозрачности из текущего проекта, а также splash 1024×1024. Увеличение 512→1024 не добавляет деталей: перед релизом желателен качественный оригинал.
+- Для публикации потребуется Apple Developer Program, подключение EAS к вашему Expo аккаунту и управление подписными сертификатами — ключи и пароли не нужно добавлять в публичный репозиторий.
+- Подробный план — `mobile/APP_STORE_CHECKLIST.md`.

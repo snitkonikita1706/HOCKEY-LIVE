@@ -23,3 +23,9 @@ jobs:
         run: npx tsc --noEmit
       - name: Bundle iOS JavaScript
         run: npx expo export --platform ios --output-dir dist
+      - name: Generate native iOS project
+        run: npx expo prebuild --platform ios --no-install --non-interactive
+      - name: Verify Xcode project generated
+        run: |
+          test -d ios
+          find ios -name '*.xcodeproj' -type d | grep -q .
