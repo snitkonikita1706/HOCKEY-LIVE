@@ -33,7 +33,6 @@ export function HockeyProvider({children}:{children:React.ReactNode}){
     for(const game of [...fallback,...data.games])byId.set(game.id,game);
     const games=[...byId.values()].sort((a,b)=>a.date.localeCompare(b.date));
     const result={games,loading:false,error:data.errors.length?data.errors.join(' · '):null,updatedAt:new Date()};
-    if(games.length)void AsyncStorage.setItem(CACHE_KEY,JSON.stringify({games,updatedAt:Date.now()})).catch(()=>{});
     return result;
    });
    if(data.games.length)setCached(false);
@@ -79,6 +78,11 @@ export function HockeyProvider({children}:{children:React.ReactNode}){
  useEffect(()=>{
   if(hydrated)void AsyncStorage.setItem(FAVORITES_KEY,JSON.stringify(favorites)).catch(()=>{});
  },[favorites,hydrated]);
+ useEffect(()=>{
+  if(load.games.length&&load.updatedAt&&!cached){
+   void AsyncStorage.setItem(CACHE_KEY,JSON.stringify({games:load.games,updatedAt:load.updatedAt.getTime()})).catch(()=>{});
+  }
+ },[load.games,load.updatedAt,cached]);
  const toggle=useCallback((team:string)=>setFavorites(p=>p.includes(team)?p.filter(x=>x!==team):[...p,team]),[]);
  const value=useMemo(()=>({...load,refresh,favorites,toggle,cached}),[load,refresh,favorites,toggle,cached]);
  return <Context.Provider value={value}>{children}</Context.Provider>;
