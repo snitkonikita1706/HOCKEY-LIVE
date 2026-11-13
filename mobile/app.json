@@ -9,18 +9,31 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "kz.snitko.hockeylive"
+      "bundleIdentifier": "kz.snitko.hockeylive",
+      "icon": "./assets/icon.png",
+      "buildNumber": "1",
+      "infoPlist": {
+        "CFBundleDisplayName": "HOCKEY LIVE"
+      }
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#070E1D",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "dark": {
+            "image": "./assets/splash-icon.png",
+            "backgroundColor": "#070E1D"
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
     },
-    "extra": {
-      "eas": {
-        "projectId": null
-      }
-    }
+    "icon": "./assets/icon.png"
   }
 }
