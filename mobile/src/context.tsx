@@ -24,14 +24,19 @@ export function HockeyProvider({children}:{children:React.ReactNode}){
   try{
    const data=await fetchAll();
    if(!mounted.current||current!==request.current)return;
+   // Keep older data for a league only if its latest request failed.
    setLoad(p=>{
     if(!data.games.length&&p.games.length)return {...p,loading:false,error:data.errors.join(' · ')||'Источники временно недоступны'};
-    return {games:data.games,loading:false,error:data.errors.length?data.errors.join(' · '):null,updatedAt:new Date()};
+    const failed=new Set(data.errors.map(e=>e.split(':')[0]));
+    const fallback=p.games.filter(g=>failed.has(g.league));
+    const byId=new Map<string,HockeyGame>();
+    for(const game of [...fallback,...data.games])byId.set(game.id,game);
+    const games=[...byId.values()].sort((a,b)=>a.date.localeCompare(b.date));
+    const result={games,loading:false,error:data.errors.length?data.errors.join(' · '):null,updatedAt:new Date()};
+    if(games.length)void AsyncStorage.setItem(CACHE_KEY,JSON.stringify({games,updatedAt:Date.now()})).catch(()=>{});
+    return result;
    });
-   if(data.games.length){
-    setCached(false);
-    await AsyncStorage.setItem(CACHE_KEY,JSON.stringify({games:data.games,updatedAt:Date.now()})).catch(()=>{});
-   }
+   if(data.games.length)setCached(false);
   }catch{
    if(mounted.current&&current===request.current)setLoad(p=>({...p,loading:false,error:'Не удалось загрузить матчи'}));
   }
