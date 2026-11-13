@@ -1,5 +1,6 @@
 import React from 'react';
 import{Linking,Pressable,ScrollView,StyleSheet,Text,View}from 'react-native';
+import{router}from 'expo-router';
 import{useHockey}from '../../src/context';
 import{colors}from '../../src/theme';
 const website='https://snitkonikita1706.github.io/HOCKEY-LIVE/';
@@ -20,6 +21,7 @@ export default function Settings(){
    </View>
    <View style={s.panel}><Text style={s.heading}>Персональные данные</Text>
     <Text style={s.explain}>Избранных клубов: {favorites.length}. Список хранится локально на устройстве и не передаётся на сервер HOCKEY LIVE. После удаления приложения локальные данные могут исчезнуть.</Text>
+    <Pressable accessibilityRole="link" onPress={()=>router.push('/privacy')} style={s.link}><Text style={s.linkText}>Политика конфиденциальности →</Text></Pressable>
    </View>
    <View style={s.panel}><Text style={s.heading}>Источники</Text>
     <Text style={s.explain}>НХЛ — NHL API. КХЛ — периодическая выгрузка Webcaster. КЛХЛ — архив федерации, а не LIVE. Показ трансляций зависит от прав, региона и подписки.</Text>
