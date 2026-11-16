@@ -11,6 +11,7 @@ import html
 import json
 import re
 import urllib.request
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 BASE = "https://pro.ligasy.kz"
@@ -114,6 +115,54 @@ def official_youtube_id(game):
         youtube = match(r'youtube\.com/embed/([-_A-Za-z0-9]{11})', zone_text)
     return youtube.group(1) if youtube else None
 
+def youtube_channel_candidates(games):
+    """Read official LIGASY TV channel RSS; accept exact teams and calendar date."""
+    rss = "https://www.youtube.com/feeds/videos.xml?channel_id=UC40yIkV8Y2r8AxnsXEQSn5A"
+    try:
+        request = urllib.request.Request(rss, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/atom+xml"})
+        with urllib.request.urlopen(request, timeout=20) as response:
+            root = ET.fromstring(response.read())
+    except Exception as exc:
+        print(f"LIGASY TV RSS unavailable: {exc}")
+        return []
+    atom = "{http://www.w3.org/2005/Atom}"
+    yt = "{http://www.youtube.com/xml/schemas/2015}"
+    months = {x: i for i, x in enumerate([
+        "января", "февраля", "марта", "апреля", "мая", "июня",
+        "июля", "августа", "сентября", "октября", "ноября", "декабря"], 1)}
+    result = []
+    for entry in root.findall(atom + "entry"):
+        title = entry.findtext(atom + "title", default="")
+        video_id = entry.findtext(yt + "videoId", default="")
+        if not re.fullmatch(r"[-_A-Za-z0-9]{11}", video_id):
+            continue
+        if "pro hokei ligasy" not in title.casefold():
+            continue
+        if any(word in title.casefold() for word in ("обзор", "хайлайт", "highlights", "summary")):
+            continue
+        found = re.search(
+            r"\|\s*([^|]+?)\s+[-–—]\s+([^|]+?)\s*\|\s*(\d{1,2})\s+([а-яё]+)(?:\s+(20\d\d))?",
+            title, re.I)
+        if not found:
+            continue
+        home, away, day, month_name, year = found.groups()
+        month = months.get(month_name.casefold())
+        if not month:
+            continue
+        normalize = lambda x: re.sub(r"\s+", " ", x.casefold()).strip()
+        for game in games:
+            stamp = dt.datetime.fromisoformat(game["date"])
+            if (stamp.day != int(day) or stamp.month != month or
+                (year and stamp.year != int(year))):
+                continue
+            if normalize(game["home"]) not in normalize(home) or normalize(game["away"]) not in normalize(away):
+                continue
+            result.append((game, video_id))
+            break
+    print(f"Matched {len(result)} exact match-date videos in official LIGASY TV RSS")
+    return result
+
+
 def main():
     content = download(BASE + "/ru/schedule")
     games = parse_schedule(content)
@@ -142,6 +191,17 @@ def main():
         except Exception as exc:
             print(f"Could not inspect {game['id']}: {exc}")
             return game, None
+
+    for game, video_id in youtube_channel_candidates(games):
+        if game['id'] in by_game:
+            continue
+        kind = 'replay' if game['status']=='done' else 'broadcast'
+        by_game[game['id']] = {
+            'youtubeId':video_id,
+            'source':'https://www.youtube.com/watch?v='+video_id,
+            'label': ('Запись матча: ' if kind=='replay' else 'Официальная трансляция: ')+game['home']+' — '+game['away']+', '+dt.datetime.fromisoformat(game['date']).strftime('%d.%m.%Y'),
+            'kind':kind,
+        }
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         for game, video_id in pool.map(inspect, candidates):
