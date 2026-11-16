@@ -20,7 +20,8 @@
     "react-native": "0.88.1",
     "react-native-safe-area-context": "*",
     "react-native-screens": "*",
-    "@react-native-async-storage/async-storage": "2.2.0"
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "react-native-webview": "14.0.1"
   },
   "devDependencies": {
     "@types/react": "~19.2.0",
