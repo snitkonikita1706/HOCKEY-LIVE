@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#070E1D">
+<title>HOCKEY LIVE · Плеер</title>
+<style>
+:root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html,body{margin:0;background:#070E1D;color:#f5f8fc}
+main{max-width:960px;margin:0 auto;padding:10px}
+h1{font-size:16px;line-height:1.35;margin:7px 0 12px}.brand{color:#48D9F4;font-size:12px;font-weight:800;letter-spacing:1px}
+#frame{width:100%;aspect-ratio:16/9;background:#000;overflow:hidden;border-radius:13px;position:relative;display:flex;align-items:center;justify-content:center}
+#frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+#status{color:#97a9bf;font-size:13px;padding:15px;text-align:center;line-height:1.5}
+a{display:inline-block;padding:13px 14px;margin:14px 0;background:#162943;border:1px solid #233a57;color:#48D9F4;border-radius:12px;text-decoration:none;font-size:13px;font-weight:700}
+small{display:block;color:#97a9bf;line-height:1.5;font-size:11px}
+</style></head>
+<body><main><div class="brand">🏒 HOCKEY LIVE · ОФИЦИАЛЬНОЕ ВИДЕО</div><h1 id="title">Загрузка видеоплеера…</h1><div id="frame"><div id="status">Проверяем видео для выбранного матча…</div></div><div id="actions"></div><small>Видео предоставляется правообладателем через YouTube. Если автор запретил встраивание, откройте трансляцию на YouTube. Запланированный эфир не означает, что трансляция уже началась.</small></main>
+<script>
+(async function(){
+ const id=new URLSearchParams(location.search).get('game')||'';
+ const title=document.getElementById('title'),frame=document.getElementById('frame'),status=document.getElementById('status'),actions=document.getElementById('actions');
+ const setStatus=s=>{status.textContent=s;title.textContent='Видео матча'};
+ if(!/^PHL-20\d\d-\d{1,4}$/.test(id)){setStatus('Неизвестный идентификатор матча');return}
+ try{
+  const response=await fetch('./videos.json',{cache:'no-store'});
+  if(!response.ok)throw Error('manifest unavailable');
+  const data=await response.json();const entry=data?.games?.[id];
+  if(!entry||!/^[-_A-Za-z0-9]{11}$/.test(entry.youtubeId)){setStatus('Подтверждённая трансляция для этого матча пока не найдена.');return}
+  title.textContent=entry.label||'Видео матча';
+  const iframe=document.createElement('iframe');
+  iframe.src='https://www.youtube.com/embed/'+entry.youtubeId+'?playsinline=1&rel=0';
+  iframe.title=entry.label||'Видеоплеер';
+  iframe.referrerPolicy='strict-origin-when-cross-origin';
+  iframe.setAttribute('allow','accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen');
+  iframe.setAttribute('allowfullscreen','');
+  iframe.setAttribute('webkit-playsinline','');
+  frame.replaceChildren(iframe);
+  const link=document.createElement('a');
+  link.href='https://www.youtube.com/watch?v='+entry.youtubeId;
+  link.target='_blank';link.rel='noopener noreferrer';link.textContent='Открыть у правообладателя ↗';
+  actions.append(link);
+ }catch{setStatus('Не удалось получить данные трансляции. Проверьте подключение к интернету.')}
+})();
+</script></body></html>
