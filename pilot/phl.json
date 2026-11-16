@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T14:34:01+00:00",
+  "updatedAt": "2026-11-16T16:22:33+00:00",
   "season": "2026/27",
   "source": "https://pro.ligasy.kz/ru/schedule",
   "live": false,
@@ -1474,7 +1474,9 @@
       "away": "Арлан",
       "date": "2026-11-16T19:00:00+05:00",
       "status": "scheduled",
-      "watch": "https://pro.ligasy.kz/ru/schedule"
+      "watch": "https://pro.ligasy.kz/ru/schedule",
+      "homeScore": 0,
+      "awayScore": 4
     },
     {
       "id": "PHL-2026-142",
