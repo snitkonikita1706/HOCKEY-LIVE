@@ -3,7 +3,7 @@ import{ActivityIndicator,FlatList,Pressable,StyleSheet,Text,View}from 'react-nat
 import{GameCard}from '../../src/components';
 import{useHockey}from '../../src/context';
 import{colors}from '../../src/theme';
-const options=['Все','NHL','KHL','KLHL']as const;
+const options=['Все','NHL','KHL','PHL','KLHL']as const;
 type LeagueFilter=typeof options[number];
 type Mode='Ближайшие'|'В эфире'|'Результаты';
 function dateKey(date:string){const d=new Date(date);if(!Number.isFinite(d.getTime()))return '';return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');}
@@ -24,8 +24,8 @@ export default function Games(){
  const liveCount=useMemo(()=>games.filter(g=>(league==='Все'||g.league===league)&&g.status==='live').length,[games,league]);
  return <View style={s.base}>
   <Text style={s.title}>Матчи</Text>
-  <Text style={s.caption}>НХЛ · КХЛ · КЛХЛ</Text>
-  <View style={s.filters}>{options.map(x=><Pressable accessibilityRole="button" key={x} onPress={()=>setLeague(x)} style={[s.filter,league===x&&s.selected]}><Text style={[s.filterText,league===x&&s.active]}>{x==='KLHL'?'КЛХЛ':x}</Text></Pressable>)}</View>
+  <Text style={s.caption}>НХЛ · КХЛ · Про-лига · КЛХЛ</Text>
+  <View style={s.filters}>{options.map(x=><Pressable accessibilityRole="button" key={x} onPress={()=>setLeague(x)} style={[s.filter,league===x&&s.selected]}><Text style={[s.filterText,league===x&&s.active]}>{x==='KLHL'?'КЛХЛ':x==='PHL'?'Про-лига':x}</Text></Pressable>)}</View>
   <View style={s.filters}>{(['Ближайшие','В эфире','Результаты']as const).map(x=><Pressable accessibilityRole="button" key={x} accessibilityState={{selected:mode===x}} onPress={()=>{setMode(x);if(x==='В эфире')setDay(null);}} style={[s.mode,mode===x&&{borderBottomColor:x==='В эфире'?colors.green:colors.cyan}]}><Text style={{color:mode===x?(x==='В эфире'?colors.green:colors.text):colors.muted,fontWeight:'800'}}>{x==='В эфире'?`В эфире (${liveCount})`:x}</Text></Pressable>)}</View>
   <View style={s.calendar}>
    <Pressable accessibilityLabel="Предыдущий день" style={s.arrow} onPress={()=>updateDay(-1)}><Text style={s.arrowText}>‹</Text></Pressable>
