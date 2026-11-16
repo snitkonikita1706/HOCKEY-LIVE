@@ -118,6 +118,7 @@ def main():
     content = download(BASE + "/ru/schedule")
     games = parse_schedule(content)
     links = featured_game_links(content)
+    print(f"Discovered {len(links)} official featured game pages in fetched HTML")
     now = dt.datetime.now(LOCAL_TZ)
     existing_media = json.loads(MEDIA.read_text("utf-8")) if MEDIA.exists() else {"games": {}}
     by_game = existing_media.get("games", {})
@@ -132,6 +133,8 @@ def main():
             game["watch"] = official
         if game["watch"].startswith(BASE + "/ru/game/"):
             candidates.append(game)
+
+    print(f"Matched {len(candidates)} upcoming/recent official game pages for video checks")
 
     def inspect(game):
         try:
