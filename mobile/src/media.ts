@@ -16,7 +16,10 @@ export async function getOfficialMedia(id:string):Promise<OfficialMedia|null>{
   if(!entry||typeof entry!=='object')return null;
   const x=entry as Partial<OfficialMedia>;
   if(typeof x.youtubeId!=='string'||!/^[-_A-Za-z0-9]{11}$/.test(x.youtubeId))return null;
-  if(typeof x.source!=='string'||!/^https:\/\/pro\.ligasy\.kz\/ru\/game\//.test(x.source))return null;
+  if(typeof x.source!=='string')return null;
+  const fromLeague=/^https:\/\/pro\.ligasy\.kz\/ru\/game\//.test(x.source);
+  const fromOfficialYouTube=x.source==='https://www.youtube.com/watch?v='+x.youtubeId;
+  if(!fromLeague&&!fromOfficialYouTube)return null;
   return {youtubeId:x.youtubeId,source:x.source,label:typeof x.label==='string'?x.label:'Видео матча',kind:x.kind==='replay'?'replay':'broadcast'};
  }catch{return null}finally{clearTimeout(timer)}
 }
