@@ -9,7 +9,7 @@ const CACHE_KEY='hockey-live:v4:matches';
 const REFRESH_MS=90000;
 const Context=createContext<Ctx|null>(null);
 function validGames(value:unknown):value is HockeyGame[]{
- return Array.isArray(value)&&value.every(g=>g&&typeof g==='object'&&typeof g.id==='string'&&['NHL','KHL','KLHL'].includes(g.league)&&typeof g.home==='string'&&typeof g.away==='string'&&typeof g.date==='string');
+ return Array.isArray(value)&&value.every(g=>g&&typeof g==='object'&&typeof g.id==='string'&&['NHL','KHL','KLHL','PHL'].includes(g.league)&&typeof g.home==='string'&&typeof g.away==='string'&&typeof g.date==='string');
 }
 export function HockeyProvider({children}:{children:React.ReactNode}){
  const[load,setLoad]=useState<LoadState>({games:[],loading:true,error:null,updatedAt:null});
