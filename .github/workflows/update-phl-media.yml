@@ -1,6 +1,10 @@
 name: Update Kazakhstan hockey video links
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'update_phl_media.py'
+      - '.github/workflows/update-phl-media.yml'
   schedule:
     - cron: '7,37 * * * *'
 permissions:
