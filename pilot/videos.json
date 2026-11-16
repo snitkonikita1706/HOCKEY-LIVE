@@ -1,0 +1,18 @@
+{
+  "updatedAt": "2026-11-16T14:28:08Z",
+  "description": "Official Pro Hokei Ligasy game-page YouTube embeds. A scheduled broadcast may not be live before puck drop.",
+  "games": {
+    "PHL-2026-141": {
+      "youtubeId": "yr8rHz6MXqU",
+      "source": "https://pro.ligasy.kz/ru/game/2705-aqt-gor",
+      "label": "Официальная трансляция: Актобе — Горняк, 17 ноября 2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-27": {
+      "youtubeId": "ozwmiT0MZIg",
+      "source": "https://pro.ligasy.kz/ru/game/2621-gor-qul",
+      "label": "Запись матча: Горняк — Кулагер, 11 сентября 2026",
+      "kind": "replay"
+    }
+  }
+}
