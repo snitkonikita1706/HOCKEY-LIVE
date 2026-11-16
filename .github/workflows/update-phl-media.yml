@@ -1,0 +1,38 @@
+name: Update Kazakhstan hockey video links
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7,37 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: phl-media-sync
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Extract official Pro Ligasy game pages and YouTube embeds
+        run: python update_phl_media.py
+      - name: Publish changes without touching the main website
+        run: |
+          git config user.name 'hockey-live-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add pilot/phl.json pilot/videos.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Sync official Pro Ligasy matches and videos'
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then exit 0; fi
+              sleep 3
+            done
+            echo 'Unable to push Pro Liga update' >&2
+            exit 1
+          fi
