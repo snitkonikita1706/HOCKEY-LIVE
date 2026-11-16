@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-16T14:28:08Z",
-  "description": "Official Pro Hokei Ligasy game-page YouTube embeds. A scheduled broadcast may not be live before puck drop.",
+  "updatedAt": "2026-11-16T14:37:40+00:00",
+  "description": "Official match-specific YouTube embeds sourced from pro.ligasy.kz; a scheduled video is not proof that it is live.",
   "games": {
     "PHL-2026-141": {
       "youtubeId": "yr8rHz6MXqU",
@@ -12,6 +12,24 @@
       "youtubeId": "ozwmiT0MZIg",
       "source": "https://pro.ligasy.kz/ru/game/2621-gor-qul",
       "label": "Запись матча: Горняк — Кулагер, 11 сентября 2026",
+      "kind": "replay"
+    },
+    "PHL-2026-139": {
+      "youtubeId": "kD6NTjzNKcQ",
+      "source": "https://www.youtube.com/watch?v=kD6NTjzNKcQ",
+      "label": "Официальная трансляция: Иртыш — Арлан, 16.11.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-138": {
+      "youtubeId": "eD7HOAORnWM",
+      "source": "https://www.youtube.com/watch?v=eD7HOAORnWM",
+      "label": "Запись матча: Алматы — Кулагер, 14.11.2026",
+      "kind": "replay"
+    },
+    "PHL-2026-137": {
+      "youtubeId": "Cxs-BAzyqeg",
+      "source": "https://www.youtube.com/watch?v=Cxs-BAzyqeg",
+      "label": "Запись матча: Бейбарыс — Горняк, 14.11.2026",
       "kind": "replay"
     }
   }
