@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T14:37:40+00:00",
+  "updatedAt": "2026-11-17T15:24:15+00:00",
   "description": "Official match-specific YouTube embeds sourced from pro.ligasy.kz; a scheduled video is not proof that it is live.",
   "games": {
     "PHL-2026-141": {
@@ -31,6 +31,18 @@
       "source": "https://www.youtube.com/watch?v=Cxs-BAzyqeg",
       "label": "Запись матча: Бейбарыс — Горняк, 14.11.2026",
       "kind": "replay"
+    },
+    "PHL-2026-140": {
+      "youtubeId": "JWJlNd5Q4ZM",
+      "source": "https://www.youtube.com/watch?v=JWJlNd5Q4ZM",
+      "label": "Официальная трансляция: Иртыш — Арлан, 17.11.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-142": {
+      "youtubeId": "DdrEYYD3g7k",
+      "source": "https://www.youtube.com/watch?v=DdrEYYD3g7k",
+      "label": "Официальная трансляция: Торпедо — Кулагер, 17.11.2026",
+      "kind": "broadcast"
     }
   }
 }
