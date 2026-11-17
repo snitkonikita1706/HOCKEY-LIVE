@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T19:53:04+00:00",
+  "updatedAt": "2026-11-17T16:30:43+00:00",
   "season": "2026/27",
   "source": "https://pro.ligasy.kz/ru/schedule",
   "live": false,
@@ -1485,7 +1485,9 @@
       "away": "Кулагер",
       "date": "2026-11-17T18:30:00+05:00",
       "status": "scheduled",
-      "watch": "https://pro.ligasy.kz/ru/schedule"
+      "watch": "https://pro.ligasy.kz/ru/schedule",
+      "homeScore": 4,
+      "awayScore": 1
     },
     {
       "id": "PHL-2026-141",
@@ -1494,7 +1496,9 @@
       "away": "Горняк",
       "date": "2026-11-17T19:00:00+05:00",
       "status": "scheduled",
-      "watch": "https://pro.ligasy.kz/ru/schedule"
+      "watch": "https://pro.ligasy.kz/ru/schedule",
+      "homeScore": 1,
+      "awayScore": 5
     },
     {
       "id": "PHL-2026-140",
