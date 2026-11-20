@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T14:31:58+00:00",
+  "updatedAt": "2026-11-20T14:16:25+00:00",
   "description": "Official match-specific YouTube embeds sourced from pro.ligasy.kz; a scheduled video is not proof that it is live.",
   "games": {
     "PHL-2026-141": {
@@ -72,6 +72,12 @@
       "youtubeId": "Ue7rXH5_2b0",
       "source": "https://www.youtube.com/watch?v=Ue7rXH5_2b0",
       "label": "Официальная трансляция: Номад — Алматы, 19.11.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-148": {
+      "youtubeId": "QTpbsFFRw-g",
+      "source": "https://www.youtube.com/watch?v=QTpbsFFRw-g",
+      "label": "Официальная трансляция: Номад — Алматы, 20.11.2026",
       "kind": "broadcast"
     }
   }
