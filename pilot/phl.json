@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T14:22:46+00:00",
+  "updatedAt": "2026-11-21T19:24:07+00:00",
   "season": "2026/27",
   "source": "https://pro.ligasy.kz/ru/schedule",
   "live": false,
@@ -1583,7 +1583,7 @@
       "home": "Иртыш",
       "away": "Кулагер",
       "date": "2026-11-21T17:00:00+05:00",
-      "status": "scheduled",
+      "status": "done",
       "watch": "https://pro.ligasy.kz/ru/schedule",
       "homeScore": 1,
       "awayScore": 10
