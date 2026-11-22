@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T12:14:26+00:00",
+  "updatedAt": "2026-11-22T14:22:12+00:00",
   "description": "Official match-specific YouTube embeds sourced from pro.ligasy.kz; a scheduled video is not proof that it is live.",
   "games": {
     "PHL-2026-141": {
@@ -90,6 +90,12 @@
       "youtubeId": "CAj4ZdhwM0w",
       "source": "https://www.youtube.com/watch?v=CAj4ZdhwM0w",
       "label": "Официальная трансляция: Иртыш — Кулагер, 22.11.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-151": {
+      "youtubeId": "fFN9kl5gDEw",
+      "source": "https://www.youtube.com/watch?v=fFN9kl5gDEw",
+      "label": "Официальная трансляция: Актобе — Сарыарка, 22.11.2026",
       "kind": "broadcast"
     }
   }
