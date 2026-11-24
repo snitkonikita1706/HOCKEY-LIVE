@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T14:40:02+00:00",
+  "updatedAt": "2026-11-24T14:36:50+00:00",
   "description": "Official match-specific YouTube embeds sourced from pro.ligasy.kz; a scheduled video is not proof that it is live.",
   "games": {
     "PHL-2026-141": {
@@ -120,6 +120,24 @@
       "youtubeId": "1yQ7xF7CA3Y",
       "source": "https://www.youtube.com/watch?v=1yQ7xF7CA3Y",
       "label": "Официальная трансляция: Горняк — Алматы, 23.11.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-157": {
+      "youtubeId": "tGPd_kHZAic",
+      "source": "https://www.youtube.com/watch?v=tGPd_kHZAic",
+      "label": "Официальная трансляция: Номад — Торпедо, 24.11.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-156": {
+      "youtubeId": "gxSWvpxu6OE",
+      "source": "https://www.youtube.com/watch?v=gxSWvpxu6OE",
+      "label": "Официальная трансляция: Горняк — Алматы, 24.11.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-158": {
+      "youtubeId": "B1wBVliI-4c",
+      "source": "https://www.youtube.com/watch?v=B1wBVliI-4c",
+      "label": "Официальная трансляция: Арлан — Бейбарыс, 24.11.2026",
       "kind": "broadcast"
     }
   }
