@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T17:49:16+00:00",
+  "updatedAt": "2026-11-25T18:49:23+00:00",
   "description": "Official match-specific YouTube embeds sourced from pro.ligasy.kz; a scheduled video is not proof that it is live.",
   "games": {
     "PHL-2026-141": {
@@ -204,6 +204,66 @@
       "youtubeId": "90MQTFCOGN4",
       "source": "https://www.youtube.com/watch?v=90MQTFCOGN4",
       "label": "Официальная трансляция: Бейбарыс — Номад, 04.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-186": {
+      "youtubeId": "uwbDR4VMS3E",
+      "source": "https://www.youtube.com/watch?v=uwbDR4VMS3E",
+      "label": "Официальная трансляция: Кулагер — Торпедо, 18.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-183": {
+      "youtubeId": "ngBKkUxzdwU",
+      "source": "https://www.youtube.com/watch?v=ngBKkUxzdwU",
+      "label": "Официальная трансляция: Кулагер — Торпедо, 17.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-187": {
+      "youtubeId": "H_EHoAb5C-g",
+      "source": "https://www.youtube.com/watch?v=H_EHoAb5C-g",
+      "label": "Официальная трансляция: Арлан — Горняк, 18.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-184": {
+      "youtubeId": "TL3JrlBuYek",
+      "source": "https://www.youtube.com/watch?v=TL3JrlBuYek",
+      "label": "Официальная трансляция: Арлан — Горняк, 17.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-188": {
+      "youtubeId": "sWKp9mTlUeo",
+      "source": "https://www.youtube.com/watch?v=sWKp9mTlUeo",
+      "label": "Официальная трансляция: Номад — Сарыарка, 18.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-185": {
+      "youtubeId": "wvYE7ujONCY",
+      "source": "https://www.youtube.com/watch?v=wvYE7ujONCY",
+      "label": "Официальная трансляция: Номад — Сарыарка, 17.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-181": {
+      "youtubeId": "b-P9wudQ3aw",
+      "source": "https://www.youtube.com/watch?v=b-P9wudQ3aw",
+      "label": "Официальная трансляция: Бейбарыс — Алматы, 17.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-179": {
+      "youtubeId": "knJaWUyHgPo",
+      "source": "https://www.youtube.com/watch?v=knJaWUyHgPo",
+      "label": "Официальная трансляция: Бейбарыс — Алматы, 16.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-182": {
+      "youtubeId": "xVe5l3DkL3s",
+      "source": "https://www.youtube.com/watch?v=xVe5l3DkL3s",
+      "label": "Официальная трансляция: Актобе — Иртыш, 17.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-180": {
+      "youtubeId": "Kv54Ud3yc-Y",
+      "source": "https://www.youtube.com/watch?v=Kv54Ud3yc-Y",
+      "label": "Официальная трансляция: Актобе — Иртыш, 16.12.2026",
       "kind": "broadcast"
     }
   }
