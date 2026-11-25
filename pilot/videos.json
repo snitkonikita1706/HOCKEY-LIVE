@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T14:36:50+00:00",
+  "updatedAt": "2026-11-25T17:02:04+00:00",
   "description": "Official match-specific YouTube embeds sourced from pro.ligasy.kz; a scheduled video is not proof that it is live.",
   "games": {
     "PHL-2026-141": {
@@ -138,6 +138,30 @@
       "youtubeId": "B1wBVliI-4c",
       "source": "https://www.youtube.com/watch?v=B1wBVliI-4c",
       "label": "Официальная трансляция: Арлан — Бейбарыс, 24.11.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-169": {
+      "youtubeId": "HSsUTT9jW-A",
+      "source": "https://www.youtube.com/watch?v=HSsUTT9jW-A",
+      "label": "Официальная трансляция: Номад — Бейбарыс, 01.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-171": {
+      "youtubeId": "onwWyIn6K8o",
+      "source": "https://www.youtube.com/watch?v=onwWyIn6K8o",
+      "label": "Официальная трансляция: Номад — Бейбарыс, 02.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-172": {
+      "youtubeId": "EEGBdIrQiT4",
+      "source": "https://www.youtube.com/watch?v=EEGBdIrQiT4",
+      "label": "Официальная трансляция: Горняк — Актобе, 02.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-170": {
+      "youtubeId": "Bj38-HonL_U",
+      "source": "https://www.youtube.com/watch?v=Bj38-HonL_U",
+      "label": "Официальная трансляция: Горняк — Актобе, 01.12.2026",
       "kind": "broadcast"
     }
   }
