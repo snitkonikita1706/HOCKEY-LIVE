@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T17:02:04+00:00",
+  "updatedAt": "2026-11-25T17:49:16+00:00",
   "description": "Official match-specific YouTube embeds sourced from pro.ligasy.kz; a scheduled video is not proof that it is live.",
   "games": {
     "PHL-2026-141": {
@@ -162,6 +162,48 @@
       "youtubeId": "Bj38-HonL_U",
       "source": "https://www.youtube.com/watch?v=Bj38-HonL_U",
       "label": "Официальная трансляция: Горняк — Актобе, 01.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-168": {
+      "youtubeId": "FRrgFEsjReU",
+      "source": "https://www.youtube.com/watch?v=FRrgFEsjReU",
+      "label": "Официальная трансляция: Алматы — Иртыш, 12.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-167": {
+      "youtubeId": "sD70et0lado",
+      "source": "https://www.youtube.com/watch?v=sD70et0lado",
+      "label": "Официальная трансляция: Алматы — Иртыш, 11.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-178": {
+      "youtubeId": "lyE5xXjpyHU",
+      "source": "https://www.youtube.com/watch?v=lyE5xXjpyHU",
+      "label": "Официальная трансляция: Кулагер — Арлан, 05.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-177": {
+      "youtubeId": "5OXGoGa_BhQ",
+      "source": "https://www.youtube.com/watch?v=5OXGoGa_BhQ",
+      "label": "Официальная трансляция: Кулагер — Арлан, 04.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-175": {
+      "youtubeId": "laEo_ezyOO4",
+      "source": "https://www.youtube.com/watch?v=laEo_ezyOO4",
+      "label": "Официальная трансляция: Алматы — Сарыарка, 03.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-176": {
+      "youtubeId": "5DKjwDfXBmE",
+      "source": "https://www.youtube.com/watch?v=5DKjwDfXBmE",
+      "label": "Официальная трансляция: Алматы — Сарыарка, 04.12.2026",
+      "kind": "broadcast"
+    },
+    "PHL-2026-108": {
+      "youtubeId": "90MQTFCOGN4",
+      "source": "https://www.youtube.com/watch?v=90MQTFCOGN4",
+      "label": "Официальная трансляция: Бейбарыс — Номад, 04.12.2026",
       "kind": "broadcast"
     }
   }
