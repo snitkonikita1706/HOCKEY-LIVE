@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T17:30:42+00:00",
+  "updatedAt": "2026-11-27T19:30:22+00:00",
   "season": "2026/27",
   "source": "https://pro.ligasy.kz/ru/schedule",
   "live": false,
@@ -1693,7 +1693,7 @@
       "home": "Сарыарка",
       "away": "Торпедо",
       "date": "2026-11-27T18:45:00+05:00",
-      "status": "scheduled",
+      "status": "done",
       "watch": "https://pro.ligasy.kz/ru/schedule",
       "homeScore": 2,
       "awayScore": 3
@@ -1704,7 +1704,7 @@
       "home": "Арлан",
       "away": "Номад",
       "date": "2026-11-27T19:00:00+05:00",
-      "status": "scheduled",
+      "status": "done",
       "watch": "https://pro.ligasy.kz/ru/schedule",
       "homeScore": 2,
       "awayScore": 3
@@ -1715,7 +1715,7 @@
       "home": "Горняк",
       "away": "Бейбарыс",
       "date": "2026-11-27T19:00:00+05:00",
-      "status": "scheduled",
+      "status": "done",
       "watch": "https://pro.ligasy.kz/ru/schedule",
       "homeScore": 3,
       "awayScore": 1
@@ -1726,7 +1726,7 @@
       "home": "Кулагер",
       "away": "Актобе",
       "date": "2026-11-27T19:00:00+05:00",
-      "status": "scheduled",
+      "status": "done",
       "watch": "https://pro.ligasy.kz/ru/schedule",
       "homeScore": 3,
       "awayScore": 1
