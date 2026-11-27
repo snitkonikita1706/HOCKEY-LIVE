@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T16:36:07+00:00",
+  "updatedAt": "2026-11-27T17:30:42+00:00",
   "season": "2026/27",
   "source": "https://pro.ligasy.kz/ru/schedule",
   "live": false,
@@ -1705,7 +1705,9 @@
       "away": "Номад",
       "date": "2026-11-27T19:00:00+05:00",
       "status": "scheduled",
-      "watch": "https://pro.ligasy.kz/ru/schedule"
+      "watch": "https://pro.ligasy.kz/ru/schedule",
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "id": "PHL-2026-160",
