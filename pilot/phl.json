@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T19:59:26+00:00",
+  "updatedAt": "2026-11-27T16:36:07+00:00",
   "season": "2026/27",
   "source": "https://pro.ligasy.kz/ru/schedule",
   "live": false,
@@ -1694,7 +1694,9 @@
       "away": "Торпедо",
       "date": "2026-11-27T18:45:00+05:00",
       "status": "scheduled",
-      "watch": "https://pro.ligasy.kz/ru/schedule"
+      "watch": "https://pro.ligasy.kz/ru/schedule",
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "id": "PHL-2026-162",
@@ -1712,7 +1714,9 @@
       "away": "Бейбарыс",
       "date": "2026-11-27T19:00:00+05:00",
       "status": "scheduled",
-      "watch": "https://pro.ligasy.kz/ru/schedule"
+      "watch": "https://pro.ligasy.kz/ru/schedule",
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "id": "PHL-2026-159",
@@ -1721,7 +1725,9 @@
       "away": "Актобе",
       "date": "2026-11-27T19:00:00+05:00",
       "status": "scheduled",
-      "watch": "https://pro.ligasy.kz/ru/schedule"
+      "watch": "https://pro.ligasy.kz/ru/schedule",
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "id": "PHL-2026-166",
